@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fontPoppins: "Poppins", sans-serif;
+  --fontRoboto: "Roboto", sans-serif;
+  --fontInter: "Inter", sans-serif;
+}
+
+body {
+  background-color: #101010;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+hr {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  padding: 30px 16px;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar .nav-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--fontPoppins);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar .navbar-button button {
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-family: var(--fontRoboto);
+  font-size: 19.2px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(97.86deg, #89c6ff -38.38%, #3633d0 71.88%);
+  border: none;
+}
+
+/* hero */
+.hero .container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.hero .hero-left {
+  width: 50%;
+}
+
+.hero .hero-left .heading {
+  font-family: var(--fontInter);
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 81px;
+  letter-spacing: 0.015em;
+  color: #fff;
+}
+
+.hero .hero-left .heading span {
+  background: linear-gradient(90deg, #ff6969 0%, #f7fc0e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero .hero-left .subheading {
+  font-family: var(--fontInter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  width: 80%;
+  margin-top: 32px;
+}
+
+.hero .hero-left .button-hero {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  gap: 28px;
+}
+
+.hero .hero-left .button-hero button:nth-child(1) {
+  /* display: block; */
+  text-decoration: none;
+  font-family: var(--fontRoboto);
+  font-size: 19.2px;
+  color: #fff;
+  padding: 16px 32px;
+  background: linear-gradient(97.86deg, #89c6ff, #3633d0);
+  border-radius: 30px;
+  border: none;
+}
+
+.hero .hero-left .button-hero button:nth-child(2) {
+  display: inline-block;
+  font-size: 19px;
+  padding: 16px 32px;
+  border: 3px solid transparent;
+  color: #fff;
+  background: linear-gradient(#101010, #101010) padding-box,
+    linear-gradient(60deg, #89c6ff, #3633d0) border-box;
+  border-radius: 30px;
+}
+
+.hero .hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
