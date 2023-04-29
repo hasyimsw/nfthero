@@ -149,9 +149,104 @@ hr {
   backdrop-filter: blur(14.8462px);
   border-radius: 8px;
   bottom: 32px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 .hero .hero-right .wallet .image-wallet {
   width: 25%;
+}
+
+/* Trending Page */
+.trending {
+  margin-top: 112px;
+  margin-bottom: 200px;
+}
+
+.trending .trending-head {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 90px;
+}
+
+.trending .trending-head h1 {
+  width: 55%;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  font-family: var(--fontPoppins);
+}
+
+.trending .trending-head p {
+  width: 45%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  text-align: justify;
+  opacity: 0.5;
+  font-family: var(--fontInter);
+}
+
+.trending .trending-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 100px;
+  gap: 120px;
+}
+
+.trending .trending-body .trending-card {
+  position: relative;
+}
+
+.trending .trending-body .trending-image {
+  width: 496px;
+  display: flex;
+  justify-content: center;
+}
+
+.trending .trending-body .trending-detail {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 100%;
+  padding: 14px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14.8462px);
+  border-radius: 8px;
+  border: 2px solid #fff;
+  bottom: -46px;
+  font-family: var(--fontRoboto);
+}
+
+.trending .trending-body .trending-detail .detail-info h1 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+.trending .trending-body .trending-detail .detail-info span {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  opacity: 0.5;
+}
+.trending .trending-body .trending-detail .detail-info p {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  background: linear-gradient(90deg, #016db0 0%, #00ffc8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 6px;
+}
+
+.trending .trending-body .trending-detail button {
+  font-size: 19.2px;
+  color: #fff;
+  padding: 8px 24px;
+  background: linear-gradient(97.86deg, #016db0, #00ffc8);
+  border-radius: 30px;
+  border: none;
 }
