@@ -104,7 +104,6 @@ hr {
 }
 
 .hero .hero-left .button-hero button:nth-child(1) {
-  /* display: block; */
   text-decoration: none;
   font-family: var(--fontRoboto);
   font-size: 19.2px;
@@ -116,7 +115,6 @@ hr {
 }
 
 .hero .hero-left .button-hero button:nth-child(2) {
-  display: inline-block;
   font-size: 19px;
   padding: 16px 32px;
   border: 3px solid transparent;
@@ -249,4 +247,10 @@ hr {
   background: linear-gradient(97.86deg, #016db0, #00ffc8);
   border-radius: 30px;
   border: none;
+}
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 85%;
+  }
 }
