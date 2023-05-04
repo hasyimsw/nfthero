@@ -14,4 +14,37 @@
   .font-roboto {
     font-family: "Roboto", sans-serif;
   }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      width: 70vw;
+      top: 80px;
+      left: 1rem;
+      background-color: white;
+      color: black;
+      z-index: 999;
+      border-radius: 0.5rem;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .menu.active {
+      transform: scaleX(1);
+    }
+
+    .menu .menu-item {
+      padding: 1.6rem;
+    }
+  }
 }

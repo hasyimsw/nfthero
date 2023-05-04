@@ -18,11 +18,18 @@
     <!-- Navbar -->
     <nav class="w-full bg-gray-900 text-white border-b-2 border-white/10">
       <div class="container mx-auto py-6 flex items-center justify-between">
-        <i data-feather="menu" class="flex md:hidden"></i>
-        <div class="md:inline-flex justify-between gap-x-8 font-poppins hidden">
-          <a href="">Marketplace</a>
-          <a href="">Creators</a>
-          <a href="">Community</a>
+        <i
+          data-feather="menu"
+          id="menu"
+          class="flex md:hidden cursor-pointer"></i>
+        <div class="menu">
+          <a href="" class="menu-item">Marketplace</a>
+          <a href="" class="menu-item">Creators</a>
+          <a href="" class="menu-item">Community</a>
+          <button
+            class="md:hidden py-2 px-6 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 font-roboto border-2 border-white">
+            <a href="" class="text-sm text-white font-roboto">Connect Wallet</a>
+          </button>
         </div>
         <img src="assets/logo.svg" alt="Logo" />
         <button
@@ -34,10 +41,11 @@
     <!-- End Navbar -->
 
     <!-- Header -->
-    <section class="w-full bg-gray-900 text-white min-h-screen pt-20">
+    <section class="w-full bg-gray-900 text-white min-h-screen py-12 md:py-20">
       <div class="container mx-auto flex flex-col lg:flex-row items-center">
         <div class="w-full lg:w-6/12">
-          <h1 class="text-5xl sm:text-6xl font-inter font-bold">
+          <h1
+            class="w-full lg:w-10/12 text-5xl sm:text-6xl font-inter font-bold">
             Discover & Collect
             <span
               class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500"
@@ -92,9 +100,117 @@
     </section>
     <!-- End Header -->
 
+    <!-- Trending -->
+    <section id="trending" class="w-full bg-gray-900 text-white pb-44">
+      <div class="container mx-auto">
+        <h1 class="text-center font-semibold text-5xl md:text-6xl mb-4">
+          Trending This Week
+        </h1>
+        <p
+          class="text-center mb-10 text-base md:text-xl text-zinc-300 font-inter font-light w-full md:w-8/12 mx-auto">
+          Various kinds of Artwork categories that are trending this week. The
+          trend will be reset every week. Don't miss out on the best artworks
+          every week
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
+          <!-- Card -->
+          <div class="relative">
+            <div class="flex justify-center">
+              <img src="assets/t-img-1.png" alt="Trensing" />
+            </div>
+            <div class="w-full -mt-16">
+              <div
+                class="font-roboto w-11/12 md:w-10/12 mx-auto flex flex-wrap gap-y-4 justify-center md:justify-between items-center p-2 md:p-3 lg:p-4 backdrop-blur bg-white/10 rounded-lg border-2 border-white">
+                <div>
+                  <h1 class="text-2xl">Miles Grogost</h1>
+                  <p class="text-xs text-zinc-300 pb-2">@rominolegs</p>
+                  <span
+                    class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-xl"
+                    >4.99 ETH</span
+                  >
+                </div>
+                <button
+                  class="py-2 px-6 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 font-roboto border-2 border-white">
+                  <a href="" class="text-sm">Collect Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="flex justify-center">
+              <img src="assets/t-img-2.png" alt="Trensing" />
+            </div>
+            <div class="w-full -mt-16">
+              <div
+                class="font-roboto w-11/12 md:w-10/12 mx-auto flex flex-wrap gap-y-4 justify-center md:justify-between items-center p-2 md:p-3 lg:p-4 backdrop-blur bg-white/10 rounded-lg border-2 border-white">
+                <div>
+                  <h1 class="text-2xl">Reox Fancxy</h1>
+                  <p class="text-xs text-zinc-300 pb-2">@hibnastiar</p>
+                  <span
+                    class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-xl"
+                    >3.27 ETH</span
+                  >
+                </div>
+                <button
+                  class="py-2 px-6 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 font-roboto border-2 border-white">
+                  <a href="" class="text-sm">Collect Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="flex justify-center">
+              <img src="assets/t-img-3.png" alt="Trensing" />
+            </div>
+            <div class="w-full -mt-16">
+              <div
+                class="font-roboto w-11/12 md:w-10/12 mx-auto flex flex-wrap gap-y-4 justify-center md:justify-between items-center p-2 md:p-3 lg:p-4 backdrop-blur bg-white/10 rounded-lg border-2 border-white">
+                <div>
+                  <h1 class="text-2xl">Miles Grogost</h1>
+                  <p class="text-xs text-zinc-300 pb-2">@senjadisini</p>
+                  <span
+                    class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-xl"
+                    >4.20 ETH</span
+                  >
+                </div>
+                <button
+                  class="py-2 px-6 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 font-roboto border-2 border-white">
+                  <a href="" class="text-sm">Collect Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="flex justify-center">
+              <img src="assets/t-img-4.png" alt="Trensing" />
+            </div>
+            <div class="w-full -mt-16">
+              <div
+                class="font-roboto w-11/12 md:w-10/12 mx-auto flex flex-wrap gap-y-4 justify-center md:justify-between items-center p-2 md:p-3 lg:p-4 backdrop-blur bg-white/10 rounded-lg border-2 border-white">
+                <div>
+                  <h1 class="text-2xl">Tuinz Reyzen</h1>
+                  <p class="text-xs text-zinc-300 pb-2">@albertov</p>
+                  <span
+                    class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 text-xl"
+                    >2.99 ETH</span
+                  >
+                </div>
+                <button
+                  class="py-2 px-6 rounded-full bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 font-roboto border-2 border-white">
+                  <a href="" class="text-sm">Collect Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Trending -->
+
     <!-- Feathericon -->
     <script>
       feather.replace();
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
